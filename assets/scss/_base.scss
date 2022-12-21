@@ -1,0 +1,84 @@
+@import "_common/normalise";
+@import "_common/highlight";
+
+html {
+  font-size: 62.5%;
+  /* Reset font size so 10px = 1rem */
+}
+
+body {
+  font-size: $global-font-size;
+  font-family: $global-font-family;
+  background: $global-dark-background;
+  margin: 20px 0 20px 0;
+  line-height: $global-lineheight;
+}
+
+.container {
+  max-width: $global-body-width;
+  background: $global-background;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $global-container-width;
+  box-shadow: $global-shadow;
+}
+
+@each $header, $size in $global-headings {
+  #{$header} {
+    font-size: $size;
+    color: $global-secondary-color;
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+a {
+  color: $global-secondary-color;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+a:hover {
+  border-bottom: 2px solid $global-secondary-color;
+}
+
+header nav {
+  border-bottom: 1px solid $global-secondary-color;
+  border-top: 1px solid $global-secondary-color;
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px 0 0;
+}
+
+header .sitetitle {
+  font-size: 3rem;
+}
+
+figure {
+  margin-top: 1rem;
+}
+
+figure img {
+  border-radius: 10px;
+  max-width: 100%;
+  box-shadow: $global-shadow;
+}
+
+figcaption h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0;
+  color: $global-primary-color;
+}
+
+@import "_common/highlight";
+@import "_common/codeblock";

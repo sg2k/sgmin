@@ -1,0 +1,27 @@
+code:not(pre *) {
+    background-color: $global-dark-background;
+    color: $global-background;
+    font-family: monospace;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.highlight pre {
+    font-family: monospace;
+    font-size: 1.2rem;
+    overflow: auto;
+    padding: 1rem;
+    box-shadow: $global-shadow;
+    margin: 1rem 0 1rem;
+    border-radius: 10px;
+    line-height: 1.5rem;
+}
+
+.highlight pre::-webkit-scrollbar {
+    display: none;
+}
+
+.chroma .hl {
+    background-color: $global-background;
+    color: $global-dark-background;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+// ========== Global ========== //
+// Text color of the body.
+$global-primary-color: #161925 !default;
+
+// Secondary color
+$global-secondary-color: #13535d !default;
+
+// Background color of the site.
+$global-background: #F6EFEF !default;
+$global-dark-background: #2c2c2c;
+
+// Font family of the site.
+$global-font-family: 'Roboto', Arial, sans-serif !default;
+
+// Serif font family of the site.
+$global-serif-font-family: serif !default;
+
+// Global width of '<body>'.
+$global-body-width: 800px !default;
+$global-container-width: 760px;
+
+// Font size attribute applied to '<html>' and '<body>'.
+$global-font-size: 1.6rem !default;
+
+// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
+$global-lineheight: 2.2rem !default;
+
+// Headings font size of the site.
+$global-headings: (
+  h1: 2.6rem,
+  h2: 2.4rem,
+  h3: 2.2rem,
+  h4: 1.6rem,
+  h5: 1.4rem,
+  h6: 1.2rem,
+  ) !default;
+
+$global-shadow: 1.6px 3.2px 3.2px #{'hsl(0deg 0% 0% / 0.45)'};
